@@ -15,3 +15,23 @@ https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunti
 **Work with query results in guided mode**  
 https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-query-builder-results
 
+**Learn the advanced hunting query language**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-query-language
+
+**Get expert training on advanced hunting**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-expert-training
+
+**Use shared queries in advanced hunting**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-shared-queries
+
+**Hunt for threats across devices, emails, apps, and identities**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-query-emails-devices
+
+**Hunt for ransomware**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-find-ransomware
+
+**Advanced hunting example for Microsoft Defender for Office 365**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-example
+
+**Migrate advanced hunting queries from Microsoft Defender for Endpoint**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-migrate-from-mde
