@@ -1,4 +1,4 @@
-# Links from the Microsoft documentation
+# Links from the Microsoft documentation!
 
 **Proactively hunt for threats with advanced hunting in Microsoft 365 Defender**  
 https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-overview
@@ -35,3 +35,18 @@ https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunti
 
 **Migrate advanced hunting queries from Microsoft Defender for Endpoint**  
 https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-migrate-from-mde
+
+**Work with advanced hunting query results**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-query-results
+
+**Quickly hunt for entity or event information with go hunt**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-go-hunt
+
+**Use custom functions**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-custom-functions
+
+**AssignedIPAddresses()**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-assignedipaddresses-function
+
+**DeviceFromIP()**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-devicefromip-function
