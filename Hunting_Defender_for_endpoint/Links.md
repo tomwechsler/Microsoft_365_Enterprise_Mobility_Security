@@ -50,3 +50,9 @@ https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunti
 
 **DeviceFromIP()**  
 https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-devicefromip-function
+
+**FileProfile()**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-fileprofile-function
+
+**SeenBy()**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-seenby-function
