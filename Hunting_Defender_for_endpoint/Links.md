@@ -56,3 +56,9 @@ https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunti
 
 **SeenBy()**  
 https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-seenby-function
+
+**Advanced hunting query best practices**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-best-practices
+
+**Handle advanced hunting errors**  
+https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-errors
