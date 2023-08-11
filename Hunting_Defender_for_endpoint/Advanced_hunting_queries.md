@@ -95,4 +95,22 @@ or (ObjectType == 'File' and ObjectName == fileName)
 ```
 <img src="/Images/Example_5.png" alt="Example 5">
 
+6. The query below obtains the list of phishing and malware detections from the EmailEvents table
+
+```
+EmailEvents
+| where Timestamp > ago(30d)
+//Get email processing events where the messages were identified as either phishing or malware
+| where ThreatTypes has "Malware" or ThreatTypes has "Phish"
+//Merge email events with identity info to get recipient details
+| join (IdentityInfo | distinct AccountUpn, AccountDisplayName, JobTitle,
+Department, City, Country) on $left.RecipientEmailAddress == $right.AccountUpn
+//Show important message and recipient details
+| project Timestamp, NetworkMessageId, Subject, ThreatTypes,
+SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
+Department, City, Country
+```
+
+<img src="/Images/Example_6.png" alt="Example 6">
+
 > Note: The KQL examples are based on incidents from Defender for Endpoint and the Microsoft documentation
