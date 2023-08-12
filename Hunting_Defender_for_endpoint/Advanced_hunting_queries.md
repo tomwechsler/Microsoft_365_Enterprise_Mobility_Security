@@ -113,4 +113,21 @@ Department, City, Country
 
 <img src="/Images/Example_6.png" alt="Example 6">
 
+7. Query for devices that the potentially compromised account has logged onto
+
+```
+DeviceInfo
+//Query for devices that the potentially compromised account has logged onto
+| where LoggedOnUsers contains 'james.west'
+| distinct DeviceId
+//Crosscheck devices against alert records in AlertEvidence and AlertInfo tables
+| join kind=inner AlertEvidence on DeviceId
+| project AlertId
+//List all alerts on devices that user has logged on to
+| join AlertInfo on AlertId
+| project AlertId, Timestamp, Title, Severity, Category
+```
+
+<img src="/Images/Example_7.png" alt="Example 7">
+
 > Note: The KQL examples are based on incidents from Defender for Endpoint and the Microsoft documentation
