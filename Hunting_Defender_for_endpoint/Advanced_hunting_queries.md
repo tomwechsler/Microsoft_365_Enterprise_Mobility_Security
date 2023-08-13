@@ -130,4 +130,26 @@ DeviceInfo
 
 <img src="/Images/Example_7.png" alt="Example 7">
 
+8. Inspect record
+
+```
+let fileName = "c-xsumtc.exe.part";
+let fileSha1 = "51c647e2b150e781bd1910cac4061a2cee1daf89";
+let fileSha256 = "86e0eac8c5ce70c4b839ef18af5231b5f92e292b81e440193cdbdc7ed108049f";
+search in (EmailAttachmentInfo,DeviceFileEvents,BehaviorEntities,CloudAppEvents)
+Timestamp between (ago(30d) .. now())
+and (FileName =~ fileName
+or (ObjectType == 'File' and ObjectName == fileName)
+//or SHA1 == fileSha1
+//or InitiatingProcessFileName =~ fileName
+//or ActivityObjects has fileName
+//or InitiatingProcessSHA1 has fileSha1
+//or SHA256 == fileSha256
+//or InitiatingProcessSHA256 == fileSha256
+)
+| extend ReportId = coalesce(ReportId_string, tostring(ReportId_long))
+```
+
+<img src="/Images/Example_8.png" alt="Example 8">
+
 > Note: The KQL examples are based on incidents from Defender for Endpoint and the Microsoft documentation
