@@ -152,4 +152,19 @@ or (ObjectType == 'File' and ObjectName == fileName)
 
 <img src="/Images/Example_8.png" alt="Example 8">
 
+9. List relevant events
+
+```
+// List relevant events
+let selectedEventTimestamp = datetime(2023-07-24);
+search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
+    Timestamp between ((selectedEventTimestamp - 30m) .. (selectedEventTimestamp + 30m))
+    and DeviceId == "0f41963cb9477a8af9ebc5442d8e66a665f55eac"
+| sort by Timestamp desc
+| extend Relevance = iff(Timestamp == selectedEventTimestamp, "Selected event", iff(Timestamp < selectedEventTimestamp, "Earlier event", "Later event"))
+| project-reorder Relevance
+```
+
+<img src="/Images/Example_9.png" alt="Example 9">
+
 > Note: The KQL examples are based on incidents from Defender for Endpoint and the Microsoft documentation
