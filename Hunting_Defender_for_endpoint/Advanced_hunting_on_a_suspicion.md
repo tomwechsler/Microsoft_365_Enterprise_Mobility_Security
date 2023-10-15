@@ -204,6 +204,7 @@ or (ObjectType == 'File' and ObjectName == fileName)
 | extend ReportId = coalesce(tostring(column_ifexists("ReportId", "")),column_ifexists("ReportId_string", ""),tostring(column_ifexists("ReportId_long","")))
 ```
 
+<img src="/Images/Hunt_3.png" alt="Example 12">
 
 > Note: The KQL examples are based on incidents from Defender for Endpoint and the Microsoft documentation
 https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-query-emails-devices
