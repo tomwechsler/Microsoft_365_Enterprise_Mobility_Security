@@ -20,5 +20,5 @@ After the configuration I restarted the service and checked the status. As we ca
 
 I hope this example shows why a virtual machine should never be configured with a public IP address (except perhaps for testing purposes). There are alternatives to manage a virtual machine over the Internet without exposing it.
 
-For example, with the Azure Bastion. In the following link you can find more information:
+For example, with the Azure Bastion. In the following link you can find more information:  
 https://learn.microsoft.com/en-us/azure/bastion/bastion-overview
