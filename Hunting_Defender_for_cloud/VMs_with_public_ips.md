@@ -17,3 +17,8 @@ To continue this investigation I installed and configured fail2ban (a very simpl
 After the configuration I restarted the service and checked the status. As we can see immediately, the IP address we already know from the log files has now been blocked by fail2ban.
 
 <img src="/Images/fail2_3.png" alt="fail2ban status">
+
+I hope this example shows why a virtual machine should never be configured with a public IP address (except perhaps for testing purposes). There are alternatives to manage a virtual machine over the Internet without exposing it.
+
+For example, with the Azure Bastion. In the following link you can find more information:
+https://learn.microsoft.com/en-us/azure/bastion/bastion-overview
