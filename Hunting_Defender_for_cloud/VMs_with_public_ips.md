@@ -8,3 +8,12 @@ After provisioning the virtual machine, I connected to the system and accessed t
 
 <img src="/Images/fail2_1.png" alt="sshd">
 
+As we can see immediately, an attempt was made to establish a connection using SSH. Always from the same IP address but with different usernames. 
+
+To continue this investigation I installed and configured fail2ban (a very simple configuration). After three unsuccessful login attempts within 10 minutes, the IP address should be blocked for 72 hours.
+
+<img src="/Images/fail2_2.png" alt="fail2ban">
+
+After the configuration I restarted the service and checked the status. As we can see immediately, the IP address we already know from the log files has now been blocked by fail2ban.
+
+<img src="/Images/fail2_3.png" alt="fail2ban status">
