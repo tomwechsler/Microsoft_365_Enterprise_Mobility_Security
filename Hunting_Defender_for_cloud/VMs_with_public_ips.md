@@ -22,3 +22,5 @@ I hope this example shows why a virtual machine should never be configured with 
 
 For example, with the Azure Bastion. In the following link you can find more information:  
 https://learn.microsoft.com/en-us/azure/bastion/bastion-overview
+
+<img src="/Images/fail2_4.png" alt="Azure Bastion">
