@@ -54,6 +54,10 @@ In the PowerShell ISE we create a connection with Microsoft Graph and in the bac
 
 <img src="/Entra_ID_CAE/Images/cae_8.png" alt="Access token is no longer valid">
 
-**The exact info from Fiddler**  
+**The exact info from Fiddler:**  
 
 <img src="/Entra_ID_CAE/Images/cae_9.png" alt="Infos from Fiddler">
+
+---
+## *HAPPY EVALUATING!*
+---
