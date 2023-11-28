@@ -14,44 +14,34 @@ Microsoft Entra ID, formerly known as Azure Active Directory, is a cloud identit
 
 ### Let's examine achieve higher security with certificate bindings.
 
-**Object Identifiers (OID)**  
+**Object Identifiers (OID):**  
 
 First we look at the certificate template on the certificate server (sorry some print screens are in German). Here we see the details of the Object Identifiers (OID).
 
-<img src="/Entra_ID_Certificate_binding/Images/OID.png" alt="OID">
+<img src="/Entra_ID_Certificate_binding/Images/OID.JPG" alt="OID">
 
-**In the Fiddler tool we copy the access token:**  
+**Add a new rule:**  
 
-<img src="/Entra_ID_CAE/Images/cae_2.png" alt="Copy access token">
+Configure an additional rule in the Entra ID Admin Center and use the same Object Identifiers (OID) value here as in the certificate template.
 
-**Now we can decode the access token on the web page https://jwt.ms/:**  
+<img src="/Entra_ID_Certificate_binding/Images/OID_Entra.JPG" alt="Rule">
 
-<img src="/Entra_ID_CAE/Images/cae_3.png" alt="Decode access token">
+**Subject Key Identifier (SKID):**  
 
-**We can see that the access token is valid for approximately 24 hour:**  
+The certificate was issued on the user's system. We obtain the subject key identifier (SKID) from this certificate. We need this value in the Entra ID Admin Center to assign it to a person. The same person for whom the certificate was issued on the system (in my case it is Tina Fluenza).
 
-<img src="/Entra_ID_CAE/Images/cae_4.png" alt="Access token valid for 24 hours">
+<img src="/Entra_ID_Certificate_binding/Images/SKI_local_user.JPG" alt="SKID">
 
-**With the fiddler tool we can see that the microsoft graph is continous access evaluation aware:**  
+**Authorization info:**  
 
-<img src="/Entra_ID_CAE/Images/cae_5.png" alt="Microsoft Graph is CAE aware">
+In the Entra ID Admin Center, we now set the value of the Subject Key Identifier (SKID) for the user in the properties.
 
-**Now lets generate an event that will revoke the access token:**
-
-<img src="/Entra_ID_CAE/Images/cae_6.png" alt="Generate event">
-
-**Back in the PowerShell ISE we can see that the access token is no longer valid (Request for re-authentication):**  
-
-<img src="/Entra_ID_CAE/Images/cae_7.png" alt="Access token is no longer valid">
-
-**In the Fiddler tool we can see that the access token is no longer valid:**  
-
-<img src="/Entra_ID_CAE/Images/cae_8.png" alt="Access token is no longer valid">
+<img src="/Entra_ID_Certificate_binding/Images/SKI_Entra_ID.JPG" alt="Authorization info">
 
 **The exact info from Fiddler:**  
 
 <img src="/Entra_ID_CAE/Images/cae_9.png" alt="Infos from Fiddler">
 
 ---
-## *HAPPY EVALUATING!*
+## *HAPPY BINDING!*
 ---
