@@ -40,7 +40,11 @@ In the Entra ID Admin Center, we now set the value of the Subject Key Identifier
 
 > Note: Please pay attention to the syntax (X509:<SKI>).
 
+**Entra ID Sign-In Logs:**  
 
+The "Tina Fluenza" has now registered on the portal https://myapps.microsoft.com and selected the certificate during the application process. This information can be found in the Entra ID Admin Center in the sign-in logs. With the confirmation of MFA by the claim in the token.
+
+<img src="/Entra_certificate_binding/Images/Claim_in_Token.JPG.JPG" alt="Sign-In Logs">
 
 ---
 ## *HAPPY BINDING!*
