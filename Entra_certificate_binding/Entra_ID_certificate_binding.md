@@ -18,29 +18,29 @@ Microsoft Entra ID, formerly known as Azure Active Directory, is a cloud identit
 
 First we look at the certificate template on the certificate server (sorry some print screens are in German). Here we see the details of the Object Identifiers (OID).
 
-<img src="/Entra_ID_Certificate_binding/Images/OID.JPG" alt="OID">
+<img src="/Entra_certificate_binding/Images/OID.JPG" alt="OID">
 
 **Add a new rule:**  
 
 Configure an additional rule in the Entra ID Admin Center and use the same Object Identifiers (OID) value here as in the certificate template.
 
-<img src="/Entra_ID_Certificate_binding/Images/OID_Entra.JPG" alt="Rule">
+<img src="/Entra_certificate_binding/Images/OID_Entra.JPG" alt="Rule">
 
 **Subject Key Identifier (SKID):**  
 
 The certificate was issued on the user's system. We obtain the subject key identifier (SKID) from this certificate. We need this value in the Entra ID Admin Center to assign it to a person. The same person for whom the certificate was issued on the system (in my case it is Tina Fluenza).
 
-<img src="/Entra_ID_Certificate_binding/Images/SKI_local_user.JPG" alt="SKID">
+<img src="/Entra_certificate_binding/Images/SKI_local_user.JPG" alt="SKID">
 
 **Authorization info:**  
 
 In the Entra ID Admin Center, we now set the value of the Subject Key Identifier (SKID) for the user in the properties.
 
-<img src="/Entra_ID_Certificate_binding/Images/SKI_Entra_ID.JPG" alt="Authorization info">
+<img src="/Entra_certificate_binding/Images/SKI_Entra_ID.JPG" alt="Authorization info">
 
-**The exact info from Fiddler:**  
+> Note: Please pay attention to the syntax (X509:<SKI>).
 
-<img src="/Entra_ID_CAE/Images/cae_9.png" alt="Infos from Fiddler">
+
 
 ---
 ## *HAPPY BINDING!*
