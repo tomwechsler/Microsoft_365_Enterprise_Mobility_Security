@@ -38,7 +38,7 @@ In the Entra ID Admin Center, we now set the value of the Subject Key Identifier
 
 <img src="/Entra_certificate_binding/Images/SKI_Entra_ID.JPG" alt="Authorization info">
 
-> Note: Please pay attention to the syntax (X509:\<SKI\>)
+> Note: Please pay attention to the syntax (X509:\<SKI\>a8052e8485eb17d865ba5d5ff0f7b326234f2860)
 
 **Entra ID Sign-In Logs:**  
 
