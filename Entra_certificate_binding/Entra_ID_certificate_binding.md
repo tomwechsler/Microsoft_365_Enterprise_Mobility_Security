@@ -10,7 +10,7 @@ https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-certifica
 https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication-technical-deep-dive
 
 **What does it mean "Achieve higher security with certificate bindings"?**  
-Microsoft Entra ID, formerly known as Azure Active Directory, is a cloud identity and access management solution that controls application access and protects identities. The term “Achieve higher security with certificate bindings” refers to a feature of Microsoft Entra ID that enhances user authentication security. This feature is part of the certificate-based authentication (CBA) process. Certificate bindings refer to the methods used to bind a certificate to a user’s identity, enhancing the security of the authentication process. There are seven supported methods for certificate bindings. These methods are considered high-affinity if they’re based on identifiers that can’t be reused, such as Subject Key Identifiers or SHA1 Public Key. This way, Microsoft Entra ID provides a secure and efficient way for users to authenticate and access applications..
+Microsoft Entra ID, formerly known as Azure Active Directory, is a cloud identity and access management solution that controls application access and protects identities. The term “Achieve higher security with certificate bindings” refers to a feature of Microsoft Entra ID that enhances user authentication security. This feature is part of the certificate-based authentication (CBA) process. Certificate bindings refer to the methods used to bind a certificate to a user’s identity, enhancing the security of the authentication process. There are seven supported methods for certificate bindings. These methods are considered high-affinity if they’re based on identifiers that can’t be reused, such as Subject Key Identifiers or SHA1 Public Key. This way, Microsoft Entra ID provides a secure and efficient way for users to authenticate and access applications.
 
 ### Let's examine achieve higher security with certificate bindings.
 
@@ -42,7 +42,7 @@ In the Entra ID Admin Center, we now set the value of the Subject Key Identifier
 
 **Entra ID Sign-In Logs:**  
 
-The "Tina Fluenza" has now registered on the portal https://myapps.microsoft.com and selected the certificate during the application process. This information can be found in the Entra ID Admin Center in the sign-in logs. With the confirmation of MFA by the claim in the token.
+"Tina Fluenza" has now registered on the portal https://myapps.microsoft.com and selected the certificate during the application process. This information can be found in the Entra ID Admin Center in the sign-in logs. With the confirmation of MFA by the claim in the token.
 
 <img src="/Entra_certificate_binding/Images/Claim_in_Token.JPG" alt="Sign-In Logs">
 
